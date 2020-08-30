@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="memory.css">
+</head>
+
+<body>
+    <header id="cabecera">
+        <h1>Welcome to the Memory Game</h1><br>
+        <form>
+            <label for="name">Username:</label>
+            <input type="text" id="nombre">
+            <input type="button" value="Send" class="button">
+        </form>
+        <div id="contadores">
+            <div id="cuentaItem">
+                <h3>Movimientos</h3>
+                <div id="contadorMovimiento">
+                    <span id="realizados">00</span>/<span id="totales">40</span>
+                </div>
+            </div>
+            <div id="cuentaItem">
+                <h3>Tiempo</h3>
+                <div id="contadorTiempo">
+                    <span id="minutos">00</span>:<span id="segundos">00</span>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+    <br>
+    <main>
+        <div id="mesa">
+            <div id="feedback">
+                <div id="modoFin">
+                    <h2 id="mensajeFinal">Feedback del juego</h2>
+                    <button id="reiniciar" value="¿REINICIAR?">¿REINICIAR?</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="memory.js" async defer></script>
+</body>
+
+</html>
